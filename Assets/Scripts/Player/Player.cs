@@ -171,4 +171,26 @@ public class Player : MonoBehaviour, IDamageable
         if (currentState != newState)
             currentState = newState;
     }
+
+    public void IncreaseDamage(float value)
+    {
+        strength += value;
+        Debug.Log("Damage increased by " + value + ". Current damage: " + strength);
+    }
+
+
+    public void IncreaseSpeed(float value)
+    {
+        // Assuming PlayerMovement.cs is attached to the same GameObject as Player.cs
+        PlayerMovement playerMovement = GetComponent<PlayerMovement>();
+        if (playerMovement != null)
+        {
+            playerMovement.Speed += value;
+            Debug.Log("Speed increased by " + value + ". Current speed: " + playerMovement.Speed);
+        }
+        else
+        {
+            Debug.LogError("PlayerMovement component not found.");
+        }
+    }
 }

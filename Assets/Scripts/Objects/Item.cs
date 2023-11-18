@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using DG.Tweening;
 
 // Enum yang mendefinisikan berbagai tipe item
@@ -43,6 +44,16 @@ public class Item : MonoBehaviour
     // Nilai item
     public int value = 1;
 
+    // Harga item
+    public int itemPrice;
+
+    void Start()
+    {
+        // Membuat instance item dengan harga 100
+        Item newItem = new Item();
+        newItem.itemPrice = 100;
+    }
+
     // Metode yang dijalankan saat objek bersentuhan dengan item
     protected virtual void OnTriggerEnter2D(Collider2D other)
     {
@@ -74,5 +85,7 @@ public class Item : MonoBehaviour
     public virtual void Collect(Inventory playerInventory)
     {
         playerInventory.ReceiveItem(gameObject, value);
+
+       
     }
 }

@@ -24,6 +24,8 @@ public class UIManager : MonoBehaviour
     public Sprite halfHeart;  // Sprite setengah hati
     public Sprite emptyHeart;  // Sprite hati kosong
 
+
+
     public static UIManager instance;
 
     void Awake()
@@ -124,7 +126,7 @@ public class UIManager : MonoBehaviour
     void UpdateMoney()
     {
         if (moneyText != null)
-            moneyText.text = playersInventory.money.ToString("0000");  // Memperbarui teks uang
+            moneyText.text = playersInventory.money.ToString("0");  // Memperbarui teks uang
     }
 
     void UpdateAmmo()

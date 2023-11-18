@@ -8,6 +8,12 @@ public class PlayerMovement : Player
     Vector2 moveDir; // Vektor arah pergerakan pemain
     Animator anim; // Komponen animator
 
+    public float Speed
+    {
+        get { return speed; }
+        set { speed = value; }
+    }
+
     protected override void Start()
     {
         base.Start(); // Memanggil metode Start dari kelas dasar (Player)
