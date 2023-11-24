@@ -129,13 +129,6 @@ public class InfoManager : MonoBehaviour
         Money = playerInventory.money;
         AmmoLeft = playerInventory.currentAmmo;
 
-
-        //I may need this method when I start actually saving games
-        //Chest[] chestsArray = FindObjectsOfType<Chest>();
-        //foreach (Chest currentChest in chestsArray)
-        //{
-        //    chests[currentChest.name] = currentChest.isOpen;
-        //}
     }
 
     public void NewGameStats()

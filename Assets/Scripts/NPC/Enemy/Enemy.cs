@@ -64,7 +64,19 @@ public class Enemy : MonoBehaviour, IDamageable
         if (droppedItem != null)
             Instantiate(droppedItem, transform.position, Quaternion.identity);
         Destroy(deathEffect, 1f);
+
+        // Menghapus objek dari daftar spawnedEnemies jika terkait dengan WaveSpawner
+        if (GameObject.FindGameObjectWithTag("WaveSpawner") != null)
+        {
+            WaveSpawner waveSpawner = GameObject.FindGameObjectWithTag("WaveSpawner").GetComponent<WaveSpawner>();
+            waveSpawner.RemoveEnemy(gameObject);
+
+            // Hancurkan objek setelah sedikit penundaan
+            Destroy(gameObject, 0.1f);
+        }
     }
+
+
 
     public void ChangeState(EnemyState newState)
     {
