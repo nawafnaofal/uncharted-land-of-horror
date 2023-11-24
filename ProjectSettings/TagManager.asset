@@ -8,6 +8,7 @@ TagManager:
   - Enemy
   - Transition
   - Boss
+  - WaveSpawner
   layers:
   - Default
   - TransparentFX

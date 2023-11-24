@@ -13,8 +13,6 @@ public enum EnemyState
 
 public class Enemy : MonoBehaviour, IDamageable
 {
-
-
     public EnemyState currentState;
 
     public float maxHealth = 2f;
@@ -63,7 +61,7 @@ public class Enemy : MonoBehaviour, IDamageable
         gameObject.SetActive(false);
         GameObject deathEffect = Instantiate(deathFX, transform.position, Quaternion.identity);
         GameObject droppedItem = newItem.GetRandomItem();
-        if(droppedItem != null)
+        if (droppedItem != null)
             Instantiate(droppedItem, transform.position, Quaternion.identity);
         Destroy(deathEffect, 1f);
     }

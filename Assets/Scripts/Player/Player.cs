@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using System;
+using UnityEngine.SceneManagement;
 
 // Enum yang mendefinisikan berbagai tipe pemain
 public enum PlayerState
@@ -29,6 +30,8 @@ public class Player : MonoBehaviour, IDamageable
     public Vector3 lastDeathPosition;
     Color originalColor;            // Warna asli pemain sebelum berkedip dalam mode invulnerable.
     bool invulnerable = false;      // Menunjukkan apakah pemain sedang dalam mode invulnerable.
+
+    private static bool hasSaveData = false;
 
     // Metode Start() dijalankan saat pemain diinisialisasi
     protected virtual void Start()
@@ -58,6 +61,8 @@ public class Player : MonoBehaviour, IDamageable
         // Mengambil posisi pemain dari InfoManager (jika tersedia)
         if (InfoManager.Instance.NewPlayerPosition != Vector2.zero)
             transform.position = InfoManager.Instance.NewPlayerPosition;
+
+        hasSaveData = Player.HasSaveData();
     }
 
 
@@ -193,4 +198,101 @@ public class Player : MonoBehaviour, IDamageable
             Debug.LogError("PlayerMovement component not found.");
         }
     }
+
+    public void SavePlayer()
+    {
+        PlayerData dataToSave = new PlayerData(this);
+
+        // Debug untuk melihat data sebelum disimpan
+        Debug.Log("Data to save:\n" +
+                  "currHealth: " + dataToSave.currHealth + "\n" +
+                  "maxHealth: " + dataToSave.maxHealth + "\n" +
+                  "strength: " + dataToSave.strength + "\n" +
+                  "speed: " + dataToSave.speed + "\n" +
+                  "money: " + dataToSave.money + "\n" +
+                  "scene: " + dataToSave.sceneName + "\n" +
+                  // Tambahkan item data lainnya
+                  "position: (" + dataToSave.position[0] + ", " + dataToSave.position[1] + ", " + dataToSave.position[2] + ")");
+
+        // Menyimpan data
+        SaveSystem.SavePlayer(this);
+        hasSaveData = true;
+        Debug.Log("Player data saved successfully!");
+    
+}
+
+    public void LoadPlayer()
+    {
+        PlayerData data = SaveSystem.LoadPlayer();
+
+        if (data != null)
+        {
+            Debug.Log("Loading player data...");
+
+            currHealth = data.currHealth;
+            Debug.Log("Current Health " + data.currHealth);
+            maxHealth = data.maxHealth;
+            strength = data.strength;
+
+            PlayerMovement playerMovement = GetComponent<PlayerMovement>();
+            if (playerMovement != null)
+            {
+                Debug.Log("Player speed before load: " + playerMovement.Speed);
+                playerMovement.Speed = data.speed;
+                Debug.Log("Player speed after load: " + playerMovement.Speed);
+            }
+
+            Inventory playerInventory = GetComponent<Inventory>();
+            if (playerInventory != null)
+            {
+                Debug.Log("Player money before load: " + playerInventory.money);
+                playerInventory.money = data.money;
+                Debug.Log("Player money after load: " + playerInventory.money);
+                playerInventory.commonKeys = data.commonKeys;
+                playerInventory.uncommonKeys = data.uncommonKeys;
+                playerInventory.bossKeys = data.bossKeys;
+                playerInventory.currentAmmo = data.currentAmmo;
+                playerInventory.maxAmmo = data.maxAmmo;
+
+                Debug.Log("Player inventory loaded: Money=" + playerInventory.money + ", CommonKeys=" + playerInventory.commonKeys);
+            }
+
+            Vector3 position = new Vector3(data.position[0], data.position[1], data.position[2]);
+            transform.position = position;
+            Debug.Log("Position: " + position);
+
+            // Memeriksa dan memuat scene jika perlu
+            if (!string.IsNullOrEmpty(data.sceneName) && data.sceneName != SceneManager.GetActiveScene().name)
+            {
+                SceneManager.LoadScene(data.sceneName);
+                Debug.Log("Scene loaded: " + data.sceneName);
+            }
+
+            // Perbarui hasSaveData
+            hasSaveData = true;
+
+                Debug.Log("Loaded player data: " +
+        "currHealth=" + data.currHealth +
+        ", maxHealth=" + data.maxHealth +
+        ", strength=" + data.strength +
+        ", speed=" + data.speed +
+        ", money=" + data.money +
+        ", commonKeys=" + data.commonKeys +
+        ", uncommonKeys=" + data.uncommonKeys +
+        ", bossKeys=" + data.bossKeys +
+        ", currentAmmo=" + data.currentAmmo +
+        ", maxAmmo=" + data.maxAmmo +
+        ", position=" + data.position[0] + ", " + data.position[1] + ", " + data.position[2] +
+        ", sceneName=" + data.sceneName);
+        }
+    }
+
+
+    public static bool HasSaveData()
+    {
+        return hasSaveData;
+    }
+
+   
+
 }
