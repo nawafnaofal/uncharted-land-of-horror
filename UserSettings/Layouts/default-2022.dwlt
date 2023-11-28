@@ -119,7 +119,7 @@ MonoBehaviour:
   m_MinSize: {x: 400, y: 100}
   m_MaxSize: {x: 32384, y: 16192}
   vertical: 0
-  controlID: 162
+  controlID: 165
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -144,7 +144,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 1
-  controlID: 81
+  controlID: 84
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -170,7 +170,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 50}
   m_MaxSize: {x: 24288, y: 8096}
   vertical: 0
-  controlID: 82
+  controlID: 85
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -243,8 +243,8 @@ MonoBehaviour:
     y: 0
     width: 258.40002
     height: 446.4
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 202, y: 221}
+  m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 16}
   m_Panes:
   - {fileID: 16}
@@ -453,7 +453,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scenes
+    - Assets/Scripts/Managers
     m_Globs: []
     m_OriginalText: 
     m_ImportLogFlags: 0
@@ -461,16 +461,16 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 16
   m_LastFolders:
-  - Assets/Scenes
+  - Assets/Scripts/Managers
   m_LastFoldersGridSize: 16
   m_LastProjectPath: D:\Kuliah\SEMESTER 7\SIB\uncharted-land-of-horror
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 253.31784}
-    m_SelectedIDs: 64930000
-    m_LastClickedID: 37732
-    m_ExpandedIDs: 000000008e670000fe920000009300000293000004930000069300000893000058930000609300006693000000ca9a3b
+    m_SelectedIDs: b4930000
+    m_LastClickedID: 37812
+    m_ExpandedIDs: 000000008e67000026930000289300002a9300002c9300002e9300003093000032930000349300003693000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -498,7 +498,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000fe9200000093000002930000049300000693000008930000
+    m_ExpandedIDs: 000000008e67000026930000289300002a9300002c9300002e93000030930000329300003493000036930000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -525,7 +525,7 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 1
+    m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs: c6230000e2670000546700009c730000ce740000ae740000787500006c76000050760000a07a0000fe7b00002c7c00007c940000cc7f0000987e0000849900001c9700003e970000ec890000b6840000063b0000ea3c000000000000568e0000548e0000588e0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -963,9 +963,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 41.573463, y: -12.942428, z: -10.908087}
+    m_Target: {x: 11.096717, y: -9.281088, z: -9.767454}
     speed: 2
-    m_Value: {x: 41.573463, y: -12.942428, z: -10.908087}
+    m_Value: {x: 11.096717, y: -9.281088, z: -9.767454}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -1015,9 +1015,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 13.530809
+    m_Target: 11.555313
     speed: 2
-    m_Value: 13.530809
+    m_Value: 11.555313
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -1080,9 +1080,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: c8a70000
-      m_LastClickedID: 42952
-      m_ExpandedIDs: 00d4ffff5cd4ffffa0dcffffb2e3ffff8aebffffa2f9ffff00fbfffff4ffffff
+      m_SelectedIDs: 
+      m_LastClickedID: 0
+      m_ExpandedIDs: 00fbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 

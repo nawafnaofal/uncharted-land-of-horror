@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine.SceneManagement;
 using System;
 using UnityEngine.Analytics;
-using static UnityEditor.ShaderGraph.Internal.KeywordDependentCollection;
+
 
 public class InfoManager : MonoBehaviour
 {
