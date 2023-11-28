@@ -101,9 +101,7 @@ public class ShopItem : MonoBehaviour
 
     bool ItemAlreadyBought()
     {
-        // Implementasikan logika ini sesuai dengan kebutuhan Anda.
-        // Misalnya, Anda dapat menggunakan PlayerPrefs atau menyimpan status pembelian di database.
-        // Untuk sementara, kita anggap item selalu dapat dibeli.
+        
         return false;
     }
 }

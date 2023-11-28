@@ -16,6 +16,8 @@ public enum PlayerState
 // Kelas yang mengatur perilaku pemain dan mengimplementasikan antarmuka IDamageable
 public class Player : MonoBehaviour, IDamageable
 {
+    public static Player instance;
+
     protected Rigidbody2D rb;    // Komponen Rigidbody2D untuk mengendalikan fisika pemain.
     SpriteRenderer sr;           // Komponen SpriteRenderer untuk mengendalikan penampilan pemain.
     public PlayerState currentState;   // Status pemain saat ini (misalnya: "Walk", "Attack", "Interact", "Stagger").
@@ -36,6 +38,17 @@ public class Player : MonoBehaviour, IDamageable
     // Metode Start() dijalankan saat pemain diinisialisasi
     protected virtual void Start()
     {
+
+        if (instance == null)
+        {
+            instance = this;
+        }
+        else
+        {
+            Destroy(gameObject); // Destroy duplicate instances
+            return;
+        }
+
         // Mengatur status awal pemain menjadi "Walk" saat permainan dimulai
         ChangeState(PlayerState.Walk);
 

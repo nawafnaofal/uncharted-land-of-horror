@@ -1868,6 +1868,22 @@ SpriteAtlas:
     - 8dbe5b1a19ab4c448b018524a06ed508: 1532286108747742640
     - 8dbe5b1a19ab4c448b018524a06ed508: 147799070741053269
     - b01548ec6ac13a949b3e85f663c35c81: 21300000
+    - 8d86080ed4f417d48b869bbe9e7f015d: 1878703482
+    - 8d86080ed4f417d48b869bbe9e7f015d: 1573224853
+    - 8d86080ed4f417d48b869bbe9e7f015d: -983221164
+    - 8d86080ed4f417d48b869bbe9e7f015d: -1454055674
+    - 8d86080ed4f417d48b869bbe9e7f015d: 1271194378
+    - 8d86080ed4f417d48b869bbe9e7f015d: 509967359
+    - 8d86080ed4f417d48b869bbe9e7f015d: -1821123603
+    - 8d86080ed4f417d48b869bbe9e7f015d: -1535746999
+    - 8d86080ed4f417d48b869bbe9e7f015d: 1289101028
+    - 8d86080ed4f417d48b869bbe9e7f015d: -1965234875
+    - 8d86080ed4f417d48b869bbe9e7f015d: -329709310
+    - 8d86080ed4f417d48b869bbe9e7f015d: 1891354096
+    - 8d86080ed4f417d48b869bbe9e7f015d: -1896369795
+    - 8d86080ed4f417d48b869bbe9e7f015d: -317391449
+    - 8d86080ed4f417d48b869bbe9e7f015d: 1432600474
+    - 8d86080ed4f417d48b869bbe9e7f015d: 510865243
     - 6088642e1c6850d42aba6be3c49ed660: -790699523677361007
     - 6088642e1c6850d42aba6be3c49ed660: -1580347878817688430
     - 6088642e1c6850d42aba6be3c49ed660: -2017960369268865016
@@ -3751,6 +3767,22 @@ SpriteAtlas:
   - {fileID: 1532286108747742640, guid: 8dbe5b1a19ab4c448b018524a06ed508, type: 3}
   - {fileID: 147799070741053269, guid: 8dbe5b1a19ab4c448b018524a06ed508, type: 3}
   - {fileID: 21300000, guid: b01548ec6ac13a949b3e85f663c35c81, type: 3}
+  - {fileID: 1878703482, guid: 8d86080ed4f417d48b869bbe9e7f015d, type: 3}
+  - {fileID: 1573224853, guid: 8d86080ed4f417d48b869bbe9e7f015d, type: 3}
+  - {fileID: -983221164, guid: 8d86080ed4f417d48b869bbe9e7f015d, type: 3}
+  - {fileID: -1454055674, guid: 8d86080ed4f417d48b869bbe9e7f015d, type: 3}
+  - {fileID: 1271194378, guid: 8d86080ed4f417d48b869bbe9e7f015d, type: 3}
+  - {fileID: 509967359, guid: 8d86080ed4f417d48b869bbe9e7f015d, type: 3}
+  - {fileID: -1821123603, guid: 8d86080ed4f417d48b869bbe9e7f015d, type: 3}
+  - {fileID: -1535746999, guid: 8d86080ed4f417d48b869bbe9e7f015d, type: 3}
+  - {fileID: 1289101028, guid: 8d86080ed4f417d48b869bbe9e7f015d, type: 3}
+  - {fileID: -1965234875, guid: 8d86080ed4f417d48b869bbe9e7f015d, type: 3}
+  - {fileID: -329709310, guid: 8d86080ed4f417d48b869bbe9e7f015d, type: 3}
+  - {fileID: 1891354096, guid: 8d86080ed4f417d48b869bbe9e7f015d, type: 3}
+  - {fileID: -1896369795, guid: 8d86080ed4f417d48b869bbe9e7f015d, type: 3}
+  - {fileID: -317391449, guid: 8d86080ed4f417d48b869bbe9e7f015d, type: 3}
+  - {fileID: 1432600474, guid: 8d86080ed4f417d48b869bbe9e7f015d, type: 3}
+  - {fileID: 510865243, guid: 8d86080ed4f417d48b869bbe9e7f015d, type: 3}
   - {fileID: -790699523677361007, guid: 6088642e1c6850d42aba6be3c49ed660, type: 3}
   - {fileID: -1580347878817688430, guid: 6088642e1c6850d42aba6be3c49ed660, type: 3}
   - {fileID: -2017960369268865016, guid: 6088642e1c6850d42aba6be3c49ed660, type: 3}
@@ -5633,6 +5665,22 @@ SpriteAtlas:
   - modified gfx melee sprites_2
   - modified gfx melee sprites_3
   - arrow
+  - NPC_test_11
+  - NPC_test_10
+  - NPC_test_13
+  - NPC_test_12
+  - NPC_test_6
+  - NPC_test_7
+  - NPC_test_4
+  - NPC_test_5
+  - NPC_test_2
+  - NPC_test_3
+  - NPC_test_0
+  - NPC_test_1
+  - NPC_test_8
+  - NPC_test_9
+  - NPC_test_15
+  - NPC_test_14
   - character_14
   - character_17
   - character_58

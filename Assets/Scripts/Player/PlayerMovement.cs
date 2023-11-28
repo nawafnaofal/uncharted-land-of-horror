@@ -8,6 +8,8 @@ public class PlayerMovement : Player
     Vector2 moveDir; // Vektor arah pergerakan pemain
     Animator anim; // Komponen animator
 
+    public bool isInteracting = false;
+
     public float Speed
     {
         get { return speed; }
@@ -25,20 +27,41 @@ public class PlayerMovement : Player
 
     private void Update()
     {
-        moveDir = Vector2.zero; // Menginisialisasi vektor arah pergerakan menjadi nol
-        moveDir.x = Input.GetAxisRaw("Horizontal"); // Mendapatkan input sumbu horizontal (A/D atau panah kiri/kanan)
-        moveDir.y = Input.GetAxisRaw("Vertical"); // Mendapatkan input sumbu vertikal (W/S atau panah atas/bawah)
+        if (!isInteracting)
+        {
+            moveDir = Vector2.zero; // Menginisialisasi vektor arah pergerakan menjadi nol
+            moveDir.x = Input.GetAxisRaw("Horizontal"); // Mendapatkan input sumbu horizontal (A/D atau panah kiri/kanan)
+            moveDir.y = Input.GetAxisRaw("Vertical"); // Mendapatkan input sumbu vertikal (W/S atau panah atas/bawah)
 
-        if (Input.GetButtonDown("Attack") && currentState != PlayerState.Stagger)
-        {
-            if (currentState != PlayerState.Attack && currentState != PlayerState.Interact)
-                StartCoroutine(AttackCo()); // Memulai serangan jika tombol serangan ditekan
-        }
-        else if (currentState == PlayerState.Walk || currentState == PlayerState.Interact)
-        {
-            UpdateAnimation(); // Memperbarui animasi pergerakan jika pemain berada dalam keadaan berjalan atau berinteraksi
+            if (Input.GetButtonDown("Attack") && currentState != PlayerState.Stagger)
+            {
+                if (currentState != PlayerState.Attack && currentState != PlayerState.Interact)
+                    StartCoroutine(AttackCo()); // Memulai serangan jika tombol serangan ditekan
+            }
+            else if (currentState == PlayerState.Walk || currentState == PlayerState.Interact)
+            {
+                UpdateAnimation(); // Memperbarui animasi pergerakan jika pemain berada dalam keadaan berjalan atau berinteraksi
+            }
         }
     }
+
+    public void SetInteracting(bool value)
+    {
+        Debug.Log("SetInteracting: " + value);
+        isInteracting = value;
+
+        // Tambahkan logika untuk menonaktifkan pergerakan saat berinteraksi
+        if (isInteracting)
+        {
+            ChangeState(PlayerState.Interact);
+            rb.velocity = Vector2.zero; // Menghentikan pergerakan pemain
+        }
+        else
+        {
+            ChangeState(PlayerState.Walk);
+        }
+    }
+
 
     IEnumerator AttackCo()
     {

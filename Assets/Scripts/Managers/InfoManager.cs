@@ -27,15 +27,15 @@ public class InfoManager : MonoBehaviour
                 DontDestroyOnLoad(instance.gameObject);
             }
 
-            // Debug statement
-            if (instance== null)
-            {
-                Debug.LogError("InfoManager instance is still null!");
-            }
-            else
-            {
-                Debug.Log("InfoManager instance found or created.");
-            }
+            //// Debug statement
+            //if (instance== null)
+            //{
+            //    Debug.LogError("InfoManager instance is still null!");
+            //}
+            //else
+            //{
+            //    Debug.Log("InfoManager instance found or created.");
+            //}
 
             return instance;
         }
