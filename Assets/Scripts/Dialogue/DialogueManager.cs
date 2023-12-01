@@ -4,15 +4,15 @@ using TMPro;
 using UnityEngine;
 using Ink.Runtime;
 using UnityEngine.EventSystems;
-using Ink.UnityIntegration;
+//using Ink.UnityIntegration;
 
 public class DialogueManager : MonoBehaviour
 {
     [Header ("Params")]
     [SerializeField] private float typingSpeed = 0.04f;
 
-    [Header("Globals Ink File")]
-    [SerializeField] private InkFile globalInkFile;
+    [Header("Load Globals JSON")]
+    [SerializeField] private TextAsset loadGlobalJSON;
 
     [Header("Dialogue UI")]
     [SerializeField] private GameObject dialoguePanel;
@@ -47,7 +47,7 @@ public class DialogueManager : MonoBehaviour
         }
         instance = this;
 
-        dialogueVariables = new DialogueVariables(globalInkFile.filePath);
+        dialogueVariables = new DialogueVariables(loadGlobalJSON);
     }
 
     public static DialogueManager GetInstance()
@@ -133,7 +133,8 @@ public class DialogueManager : MonoBehaviour
 
     private IEnumerator DisplayLine(string line)
     {
-        dialogueText.text = "";
+        dialogueText.text = line;
+        dialogueText.maxVisibleCharacters = 0;
 
         continueIcon.SetActive(false);
         HideChoice();
@@ -146,14 +147,13 @@ public class DialogueManager : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.E))
             {
-                dialogueText.text = line;
+                dialogueText.maxVisibleCharacters = line.Length;
                 break;
             }
 
             if (letter == '<' || isAddingRichTextTag)
             {
                 isAddingRichTextTag = true;
-                dialogueText.text += letter;
                 if (letter == '>')
                 {
                     isAddingRichTextTag = false;
@@ -161,7 +161,7 @@ public class DialogueManager : MonoBehaviour
             }
             else
             {
-                dialogueText.text += letter;
+                dialogueText.maxVisibleCharacters++;
                 yield return new WaitForSeconds(typingSpeed);
             }
 
@@ -264,6 +264,11 @@ public class DialogueManager : MonoBehaviour
             Debug.LogWarning("Ink Variable was found to be null: " + variableName);
         }
         return variableValue;
+    }
+
+    public void OnApplicationQuit()
+    {
+        dialogueVariables.SaveVariables();
     }
 
 }
