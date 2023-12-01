@@ -1,0 +1,3 @@
+INCLUDE globals.ink
+...
+{ player_name == "": Kamu siapa? | Kamu {player_name} kan?}

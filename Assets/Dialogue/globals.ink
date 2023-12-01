@@ -1,0 +1,1 @@
+VAR player_name = ""

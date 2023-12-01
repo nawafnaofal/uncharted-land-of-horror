@@ -1,3 +1,7 @@
+INCLUDE globals.ink
+...
+{ player_name == "": -> main | -> already_chose }
+
 -> main
 
 === main ===
@@ -10,5 +14,10 @@ wah kamu terlihat cantik, kenalan dong, namaku Dadang, kamu?
         -> chosen("Nengsih")
 
 === chosen(jawaban) ===
+~ player_name = jawaban
 {jawaban}
-->END
+-> END
+
+=== already_chose ===
+Nama kamu tuh {player_name}
+-> END
