@@ -27,7 +27,7 @@ public class PlayerMovement : Player
 
     private void Update()
     {
-        if (!isInteracting)
+        if (!DialogueManager.GetInstance().dialogueIsPlaying)
         {
             moveDir = Vector2.zero; // Menginisialisasi vektor arah pergerakan menjadi nol
             moveDir.x = Input.GetAxisRaw("Horizontal"); // Mendapatkan input sumbu horizontal (A/D atau panah kiri/kanan)

@@ -15,9 +15,11 @@ public class SoundsManager : MonoBehaviour
         TreasureChestOpen,
     }
 
-    public static SoundsManager instance;
+    public static SoundsManager instance { get; private set; } 
     AudioSource myAudio;
     public SoundAudioClip[] soundAudioClipArray;
+
+    private AudioSource source;
 
 
 
@@ -32,6 +34,8 @@ public class SoundsManager : MonoBehaviour
             instance = this;
             DontDestroyOnLoad(gameObject);
         }
+
+        source = GetComponent<AudioSource>();
     }
 
     void Start()
@@ -55,6 +59,12 @@ public class SoundsManager : MonoBehaviour
         }
         Debug.LogError("Sound " + sound + " was not found!");
         return null;
+    }
+
+
+    public void PlaySound(AudioClip sound)
+    {
+        source.PlayOneShot(sound);
     }
 }
 

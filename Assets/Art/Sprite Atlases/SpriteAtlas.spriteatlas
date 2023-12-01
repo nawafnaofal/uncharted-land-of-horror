@@ -113,6 +113,8 @@ SpriteAtlas:
     - 9e9383820ce1d344aafcca271b0d5745: 21300000
     - 717176f2d0fbb1e4fbb6009c83982278: 21300000
     - 73d55c63aaf4bec4893fc7b0c28cbab9: 21300000
+    - e6274b838c8e8384883b4f7e7ae9d3b8: 21300000
+    - 48d5b3042c56cfc4983789e10853f00d: 21300000
     - 9c4e0aa48c4514e4fbb53ad6dfbe08d6: 2313419830122661008
     - 9c4e0aa48c4514e4fbb53ad6dfbe08d6: 6349480184285452005
     - 9c4e0aa48c4514e4fbb53ad6dfbe08d6: -5951506096933670981
@@ -1867,6 +1869,8 @@ SpriteAtlas:
     - 8dbe5b1a19ab4c448b018524a06ed508: -8041784067552993899
     - 8dbe5b1a19ab4c448b018524a06ed508: 1532286108747742640
     - 8dbe5b1a19ab4c448b018524a06ed508: 147799070741053269
+    - 5e527bba2ba51f4449203f971bdbff96: 21300000
+    - 43df39fa73d0d5f4ebf79b25a3674d3d: 21300000
     - b01548ec6ac13a949b3e85f663c35c81: 21300000
     - 8d86080ed4f417d48b869bbe9e7f015d: 1878703482
     - 8d86080ed4f417d48b869bbe9e7f015d: 1573224853
@@ -1946,7 +1950,11 @@ SpriteAtlas:
     - 6088642e1c6850d42aba6be3c49ed660: -3304375855044731091
     - 6088642e1c6850d42aba6be3c49ed660: -8506932439865520012
     - 6088642e1c6850d42aba6be3c49ed660: -2355267295002078251
+    - 05c51e3e973f33545a1c948599f087b8: 21300000
     - 0b1af04ef7a61fb4da13442065ddec23: 21300000
+    - 4f626e5e703797142aef7c072e38a93f: 21300000
+    - 252de66eef5851446802e505b46fd969: 21300000
+    - fcc78ebe4109293408edfe8f1999b3ba: 21300000
   m_MasterAtlas: {fileID: 0}
   m_PackedSprites:
   - {fileID: 21300000, guid: 09effed098368b545974191d08f46d59, type: 3}
@@ -2012,6 +2020,8 @@ SpriteAtlas:
   - {fileID: 21300000, guid: 9e9383820ce1d344aafcca271b0d5745, type: 3}
   - {fileID: 21300000, guid: 717176f2d0fbb1e4fbb6009c83982278, type: 3}
   - {fileID: 21300000, guid: 73d55c63aaf4bec4893fc7b0c28cbab9, type: 3}
+  - {fileID: 21300000, guid: e6274b838c8e8384883b4f7e7ae9d3b8, type: 3}
+  - {fileID: 21300000, guid: 48d5b3042c56cfc4983789e10853f00d, type: 3}
   - {fileID: 2313419830122661008, guid: 9c4e0aa48c4514e4fbb53ad6dfbe08d6, type: 3}
   - {fileID: 6349480184285452005, guid: 9c4e0aa48c4514e4fbb53ad6dfbe08d6, type: 3}
   - {fileID: -5951506096933670981, guid: 9c4e0aa48c4514e4fbb53ad6dfbe08d6, type: 3}
@@ -3766,6 +3776,8 @@ SpriteAtlas:
   - {fileID: -8041784067552993899, guid: 8dbe5b1a19ab4c448b018524a06ed508, type: 3}
   - {fileID: 1532286108747742640, guid: 8dbe5b1a19ab4c448b018524a06ed508, type: 3}
   - {fileID: 147799070741053269, guid: 8dbe5b1a19ab4c448b018524a06ed508, type: 3}
+  - {fileID: 21300000, guid: 5e527bba2ba51f4449203f971bdbff96, type: 3}
+  - {fileID: 21300000, guid: 43df39fa73d0d5f4ebf79b25a3674d3d, type: 3}
   - {fileID: 21300000, guid: b01548ec6ac13a949b3e85f663c35c81, type: 3}
   - {fileID: 1878703482, guid: 8d86080ed4f417d48b869bbe9e7f015d, type: 3}
   - {fileID: 1573224853, guid: 8d86080ed4f417d48b869bbe9e7f015d, type: 3}
@@ -3845,7 +3857,11 @@ SpriteAtlas:
   - {fileID: -3304375855044731091, guid: 6088642e1c6850d42aba6be3c49ed660, type: 3}
   - {fileID: -8506932439865520012, guid: 6088642e1c6850d42aba6be3c49ed660, type: 3}
   - {fileID: -2355267295002078251, guid: 6088642e1c6850d42aba6be3c49ed660, type: 3}
+  - {fileID: 21300000, guid: 05c51e3e973f33545a1c948599f087b8, type: 3}
   - {fileID: 21300000, guid: 0b1af04ef7a61fb4da13442065ddec23, type: 3}
+  - {fileID: 21300000, guid: 4f626e5e703797142aef7c072e38a93f, type: 3}
+  - {fileID: 21300000, guid: 252de66eef5851446802e505b46fd969, type: 3}
+  - {fileID: 21300000, guid: fcc78ebe4109293408edfe8f1999b3ba, type: 3}
   m_PackedSpriteNamesToIndex:
   - bow
   - Keys_2
@@ -3910,6 +3926,8 @@ SpriteAtlas:
   - mainmenu
   - 1
   - magic bar
+  - happy
+  - happy
   - cave_50
   - cave_51
   - cave_52
@@ -5664,6 +5682,8 @@ SpriteAtlas:
   - modified gfx melee sprites_1
   - modified gfx melee sprites_2
   - modified gfx melee sprites_3
+  - sad
+  - sad
   - arrow
   - NPC_test_11
   - NPC_test_10
@@ -5743,7 +5763,11 @@ SpriteAtlas:
   - character_81
   - character_71
   - character_80
+  - default
   - door
+  - ContinueIcon
+  - neutral
+  - neutral
   m_RenderDataMap: {}
   m_Tag: SpriteAtlas
   m_IsVariant: 0
