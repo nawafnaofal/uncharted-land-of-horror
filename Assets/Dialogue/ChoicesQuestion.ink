@@ -5,7 +5,7 @@ INCLUDE globals.ink
 -> main
 
 === main ===
-wah kamu terlihat cantik, kenalan dong, namaku Dadang, kamu?
+wah kamu terlihat cantik, kenalan dong, namaku Dadang, kamu? 
     + [Memperkenalkan diri]
         -> chosen("Kirana")
     + [*Bengong]

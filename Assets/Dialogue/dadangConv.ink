@@ -1,5 +1,5 @@
 ...
-haloo! #speaker:Dadang #portrait:dr_green_neutral #layout:right
+haloo! #speaker:Dadang #portrait:dr_green_neutral #layout:right #audio:ac_low
 -> main
 
 === main === 
@@ -9,9 +9,9 @@ Pinjam dulu seratus, nanti besok ku ganti 2 kali lipat, gimana?
 + [Ogah]
     Yahh, <color=\#5B81FF>pelit</color> lu huu. #portrait:dr_green_sad
     
-- Masih aja maen <b><color=\#FF1E35>selot</color><b>, cepet tobat dah. #speaker:Kirana #portrait:ms_yellow_neutral #layout:left
+- Masih aja maen <b><color=\#FF1E35>selot</color><b>, cepet tobat dah. #speaker:Kirana #portrait:ms_yellow_neutral #layout:left #audio:ac_high
 
-Ntaran kalo dah jackpot hehe. #speaker:Dadang #portrait:dr_green_neutral #layout:right
+Ntaran kalo dah jackpot hehe. #speaker:Dadang #portrait:dr_green_neutral #layout:right #audio:ac_low
 + [Ngomong ke Dadang lagi]
     -> main
 + [Tinggalin]

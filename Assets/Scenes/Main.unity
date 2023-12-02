@@ -1880,8 +1880,13 @@ MonoBehaviour:
   - {fileID: 11719299}
   - {fileID: 1554319923}
   - {fileID: 389625607}
-  dialogueTypingSoundClip: {fileID: 8300000, guid: 3fb478e2c87bb1342a9b3b711e9a4544,
-    type: 3}
+  defaultAudioInfo: {fileID: 11400000, guid: b96b554d489ea054283b2538a8b530dd, type: 2}
+  audioInfos:
+  - {fileID: 11400000, guid: 1c9e8e683e8bb01439b1a550ea85755b, type: 2}
+  - {fileID: 11400000, guid: 587aad1490c6a9e41a7e6917ca3d533a, type: 2}
+  - {fileID: 11400000, guid: 93ad5e70d40545543859226ad232991b, type: 2}
+  - {fileID: 11400000, guid: 676faae81022ac84b815e6c26bb492a2, type: 2}
+  makePredictable: 1
 --- !u!1 &478470373
 GameObject:
   m_ObjectHideFlags: 0
@@ -49349,7 +49354,7 @@ Transform:
   m_GameObject: {fileID: 1126942258}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -6.97, y: 4.210764, z: 0.017765205}
+  m_LocalPosition: {x: -7.83, y: 4.210764, z: 0.017765205}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
