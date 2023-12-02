@@ -26,6 +26,10 @@ public class DialogueManager : MonoBehaviour
     [SerializeField] private GameObject[] choices;
     private TextMeshProUGUI[] choicesText;
 
+    [Header("Choice UI")]
+    [SerializeField] private AudioClip dialogueTypingSoundClip;
+    private AudioSource audioSource;
+
     private Story currentStory;
     public bool dialogueIsPlaying { get; private set; }
     private bool canContinueToNextLine = false;
@@ -48,6 +52,8 @@ public class DialogueManager : MonoBehaviour
         instance = this;
 
         dialogueVariables = new DialogueVariables(loadGlobalJSON);
+
+        audioSource = this.gameObject.AddComponent<AudioSource>();
     }
 
     public static DialogueManager GetInstance()
@@ -80,7 +86,7 @@ public class DialogueManager : MonoBehaviour
 
         if (canContinueToNextLine 
             && currentStory.currentChoices.Count == 0 
-            && Input.GetKeyDown(KeyCode.E))
+            && InputManager.GetInstance().GetSubmitPressed())
         {
             ContinueStory();
         }
@@ -145,7 +151,7 @@ public class DialogueManager : MonoBehaviour
 
         foreach (char letter in line.ToCharArray())
         {
-            if (Input.GetKeyDown(KeyCode.E))
+            if (InputManager.GetInstance().GetSubmitPressed())
             {
                 dialogueText.maxVisibleCharacters = line.Length;
                 break;
@@ -162,6 +168,7 @@ public class DialogueManager : MonoBehaviour
             else
             {
                 dialogueText.maxVisibleCharacters++;
+                audioSource.PlayOneShot(dialogueTypingSoundClip);
                 yield return new WaitForSeconds(typingSpeed);
             }
 
@@ -270,5 +277,6 @@ public class DialogueManager : MonoBehaviour
     {
         dialogueVariables.SaveVariables();
     }
+
 
 }
