@@ -18,6 +18,7 @@ public class UIManager : MonoBehaviour
     public Button quitButton;   // Tombol Quit pada LosePanel
     public TextMeshProUGUI moneyText;  // Teks untuk menampilkan uang
     public Slider magicBar;  // Slider untuk menampilkan kemampuan khusus pemain
+    public TextMeshProUGUI ammoText;
 
     public List<Image> hearts;  // Daftar gambar hati
     public Sprite fullHeart;  // Sprite hati penuh
@@ -41,6 +42,7 @@ public class UIManager : MonoBehaviour
         player.HealthGiven += UpdateHearts;  // Menyambungkan metode UpdateHearts dengan acara HealthGiven pemain
         playersInventory = player.GetComponent<Inventory>();  // Mendapatkan komponen Inventory dari pemain
         playersInventory.MoneyChanged += UpdateMoney;  // Menyambungkan metode UpdateMoney dengan acara MoneyChanged dari inventaris pemain
+        ammoText = FindObjectOfType<TextMeshProUGUI>();
         playersInventory.AmmoChanged += UpdateAmmo;  // Menyambungkan metode UpdateAmmo dengan acara AmmoChanged dari inventaris pemain
         playersInventory.MagicChanged += UpdateMagic;  // Menyambungkan metode UpdateMagic dengan acara MagicChanged dari inventaris pemain
         playersInventory.HeartAmountChanged += UpdateHeartContainer;  // Menyambungkan metode UpdateHeartContainer dengan acara HeartAmountChanged dari inventaris pemain
@@ -131,8 +133,8 @@ public class UIManager : MonoBehaviour
 
     void UpdateAmmo()
     {
-        if (magicBar != null)
-            magicBar.value = playersInventory.currentAmmo;  // Memperbarui nilai slider kemampuan khusus
+        if (ammoText != null)
+            ammoText.text = playersInventory.currentAmmo.ToString("0") + "x";  // Memperbarui nilai slider kemampuan khusus
     }
 
     void UpdateMagic()
