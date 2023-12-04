@@ -23,6 +23,9 @@ public class Inventory : MonoBehaviour
     public event Action AmmoChanged; // Event yang terpicu saat jumlah amunisi berubah
     public event Action MagicChanged; // Event yang terpicu saat jumlah magic berubah
     public event Action HeartAmountChanged; // Event yang terpicu saat jumlah hati berubah
+    public event Action CommonKeyChanged;
+    public event Action UncommonKeyChanged;
+    public event Action BossKeyChanged;
 
     private void Start()
     {
@@ -70,12 +73,15 @@ public class Inventory : MonoBehaviour
         {
             case ItemType.CommonKey:
                 commonKeys += amount; // Menambahkan jumlah kunci biasa
+                CommonKeyChanged?.Invoke();
                 break;
             case ItemType.UncommonKey:
                 uncommonKeys += amount; // Menambahkan jumlah kunci tidak biasa
+                UncommonKeyChanged?.Invoke();
                 break;
             case ItemType.BossKey:
                 bossKeys += amount; // Menambahkan jumlah kunci bos
+                BossKeyChanged?.Invoke();
                 break;
             case ItemType.Heart:
                 Player player = GetComponent<Player>(); // Mengambil komponen Player
@@ -117,12 +123,15 @@ public class Inventory : MonoBehaviour
         {
             case ItemType.CommonKey:
                 commonKeys -= amount; // Mengurangi jumlah kunci biasa
+                CommonKeyChanged?.Invoke();
                 break;
             case ItemType.UncommonKey:
                 uncommonKeys -= amount; // Mengurangi jumlah kunci tidak biasa
+                UncommonKeyChanged?.Invoke();
                 break;
             case ItemType.BossKey:
                 bossKeys -= amount; // Mengurangi jumlah kunci bos
+                BossKeyChanged?.Invoke();
                 break;
             case ItemType.Heart:
                 break;

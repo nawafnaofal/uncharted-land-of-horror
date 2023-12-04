@@ -19,6 +19,9 @@ public class UIManager : MonoBehaviour
     public TextMeshProUGUI moneyText;  // Teks untuk menampilkan uang
     public Slider magicBar;  // Slider untuk menampilkan kemampuan khusus pemain
     public TextMeshProUGUI ammoText;
+    public TextMeshProUGUI commonKeysText;
+    public TextMeshProUGUI uncommonKeysText;
+    public TextMeshProUGUI bossKeysText;
 
     public List<Image> hearts;  // Daftar gambar hati
     public Sprite fullHeart;  // Sprite hati penuh
@@ -42,7 +45,9 @@ public class UIManager : MonoBehaviour
         player.HealthGiven += UpdateHearts;  // Menyambungkan metode UpdateHearts dengan acara HealthGiven pemain
         playersInventory = player.GetComponent<Inventory>();  // Mendapatkan komponen Inventory dari pemain
         playersInventory.MoneyChanged += UpdateMoney;  // Menyambungkan metode UpdateMoney dengan acara MoneyChanged dari inventaris pemain
-        ammoText = FindObjectOfType<TextMeshProUGUI>();
+        playersInventory.CommonKeyChanged += UpdateCommonKey;
+        playersInventory.UncommonKeyChanged += UpdateUncommonKey;
+        playersInventory.BossKeyChanged += UpdateBossKey;
         playersInventory.AmmoChanged += UpdateAmmo;  // Menyambungkan metode UpdateAmmo dengan acara AmmoChanged dari inventaris pemain
         playersInventory.MagicChanged += UpdateMagic;  // Menyambungkan metode UpdateMagic dengan acara MagicChanged dari inventaris pemain
         playersInventory.HeartAmountChanged += UpdateHeartContainer;  // Menyambungkan metode UpdateHeartContainer dengan acara HeartAmountChanged dari inventaris pemain
@@ -51,8 +56,10 @@ public class UIManager : MonoBehaviour
         UpdateMoney();  // Memanggil metode UpdateMoney untuk memperbarui tampilan uang
         InitMagic();  // Memanggil metode InitMagic untuk menginisialisasi tampilan kemampuan khusus
         UpdateMagic();  // Memanggil metode UpdateMagic untuk memperbarui tampilan kemampuan khusus
-        //retryButton.onClick.AddListener(Retry);
-        //quitButton.onClick.AddListener(Quit);
+
+        commonKeysText.text = playersInventory.commonKeys.ToString() + "x";
+        uncommonKeysText.text = playersInventory.uncommonKeys.ToString() + "x";
+        bossKeysText.text = playersInventory.bossKeys.ToString() + "x";
     }
 
     void Update()
@@ -131,10 +138,28 @@ public class UIManager : MonoBehaviour
             moneyText.text = playersInventory.money.ToString("0");  // Memperbarui teks uang
     }
 
+    void UpdateCommonKey()
+    {
+        if (commonKeysText != null)
+            commonKeysText.text =  playersInventory.commonKeys.ToString() + "x";  // Memperbarui teks jumlah kunci biasa
+    }
+     void UpdateUncommonKey()
+    {
+        if (uncommonKeysText != null)
+            uncommonKeysText.text =  playersInventory.uncommonKeys.ToString() + "x";  // Memperbarui teks jumlah kunci tidak biasa
+    }
+
+    void UpdateBossKey()
+    {
+        if (bossKeysText != null)
+            bossKeysText.text =  playersInventory.bossKeys.ToString() + "x";
+    }
+
     void UpdateAmmo()
     {
-        if (ammoText != null)
-            ammoText.text = playersInventory.currentAmmo.ToString("0") + "x";  // Memperbarui nilai slider kemampuan khusus
+        if (magicBar != null)
+            magicBar.value = playersInventory.currentAmmo;  // Memperbarui nilai slider kemampuan khusus
+            ammoText.text = playersInventory.currentAmmo.ToString("0") + "x";
     }
 
     void UpdateMagic()
