@@ -1408,6 +1408,7 @@ SpriteAtlas:
     - 6d088dc48ec3eb941bebaa5912c5ca22: -6960371683831875272
     - 6d088dc48ec3eb941bebaa5912c5ca22: 6469460937200175538
     - 6d088dc48ec3eb941bebaa5912c5ca22: 2924928888349640390
+    - fa7dab35416eb254daa396373b515ba9: 21300000
     - f1fc6bc5aa0345a4fb8c5974f8696ae6: 21300000
     - da3638d5041094649ab78df54e5f40a2: -1986772863260763996
     - da3638d5041094649ab78df54e5f40a2: -5331891938937075238
@@ -2056,6 +2057,7 @@ SpriteAtlas:
     - bd498888d878f7e47be8219a25e0ae24: 1185661108
     - bd498888d878f7e47be8219a25e0ae24: 1256841248
     - bd498888d878f7e47be8219a25e0ae24: 1094966052
+    - 7e6bf029921b83f4a8d7cb6060aba8db: 21300000
     - 8dbe5b1a19ab4c448b018524a06ed508: -872947984015748712
     - 8dbe5b1a19ab4c448b018524a06ed508: 4004008643541842471
     - 8dbe5b1a19ab4c448b018524a06ed508: 6703265110210787806
@@ -3518,6 +3520,7 @@ SpriteAtlas:
   - {fileID: -6960371683831875272, guid: 6d088dc48ec3eb941bebaa5912c5ca22, type: 3}
   - {fileID: 6469460937200175538, guid: 6d088dc48ec3eb941bebaa5912c5ca22, type: 3}
   - {fileID: 2924928888349640390, guid: 6d088dc48ec3eb941bebaa5912c5ca22, type: 3}
+  - {fileID: 21300000, guid: fa7dab35416eb254daa396373b515ba9, type: 3}
   - {fileID: 21300000, guid: f1fc6bc5aa0345a4fb8c5974f8696ae6, type: 3}
   - {fileID: -1986772863260763996, guid: da3638d5041094649ab78df54e5f40a2, type: 3}
   - {fileID: -5331891938937075238, guid: da3638d5041094649ab78df54e5f40a2, type: 3}
@@ -4166,6 +4169,7 @@ SpriteAtlas:
   - {fileID: 1185661108, guid: bd498888d878f7e47be8219a25e0ae24, type: 3}
   - {fileID: 1256841248, guid: bd498888d878f7e47be8219a25e0ae24, type: 3}
   - {fileID: 1094966052, guid: bd498888d878f7e47be8219a25e0ae24, type: 3}
+  - {fileID: 21300000, guid: 7e6bf029921b83f4a8d7cb6060aba8db, type: 3}
   - {fileID: -872947984015748712, guid: 8dbe5b1a19ab4c448b018524a06ed508, type: 3}
   - {fileID: 4004008643541842471, guid: 8dbe5b1a19ab4c448b018524a06ed508, type: 3}
   - {fileID: 6703265110210787806, guid: 8dbe5b1a19ab4c448b018524a06ed508, type: 3}
@@ -5627,6 +5631,7 @@ SpriteAtlas:
   - Overworld_623
   - Overworld_673
   - Overworld_129
+  - Aya sprite 1
   - Tileset
   - objects_71
   - objects_75
@@ -6275,6 +6280,7 @@ SpriteAtlas:
   - MainMap_26
   - MainMap_14
   - MainMap_46
+  - aya7
   - modified gfx melee sprites_15
   - modified gfx melee sprites_14
   - modified gfx melee sprites_13

@@ -1,5 +1,5 @@
 ...
-haloo! #speaker:Dadang #portrait:dr_green_neutral #layout:right #audio:ac_low
+haloo! #speaker:Dadang #portrait:ayaOpening #layout:right #audio:ac_low
 -> main
 
 === main === 

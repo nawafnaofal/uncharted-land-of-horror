@@ -61,6 +61,11 @@ public class DialogueManager : MonoBehaviour
         audioSource = this.gameObject.AddComponent<AudioSource>();
 
         currentAudioInfo = defaultAudioInfo;
+
+        if (InputManager.GetInstance() == null)
+        {
+            Debug.LogError("InputManager is not initialized!");
+        }
     }
 
     public static DialogueManager GetInstance()
@@ -362,5 +367,12 @@ public class DialogueManager : MonoBehaviour
         dialogueVariables.SaveVariables();
     }
 
+    public void ContinueDialogue()
+    {
+        if (canContinueToNextLine)
+        {
+            ContinueStory();
+        }
+    }
 
 }
