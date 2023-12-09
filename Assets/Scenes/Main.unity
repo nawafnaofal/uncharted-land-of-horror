@@ -66050,6 +66050,16 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 56.46341
       objectReference: {fileID: 0}
+    - target: {fileID: 8591822281459866863, guid: 64b00f7ea6259bf4a9a1ed35046a05e9,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 474827089}
+    - target: {fileID: 8591822281459866863, guid: 64b00f7ea6259bf4a9a1ed35046a05e9,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: MakeChoice
+      objectReference: {fileID: 0}
     - target: {fileID: 9028380472100566426, guid: 64b00f7ea6259bf4a9a1ed35046a05e9,
         type: 3}
       propertyPath: m_RepeatDelay

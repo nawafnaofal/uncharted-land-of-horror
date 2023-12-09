@@ -23,7 +23,7 @@ public class Shop : Interactable
     protected override void Update()
     {
         base.Update();
-        if (playerInRange && Input.GetButtonDown("Submit"))
+        if (playerInRange && InputManager.GetInstance().GetInteractPressed())
         {
             // Menampilkan atau menyembunyikan panel shop saat tombol "Submit" ditekan
             ToggleShopPanel();

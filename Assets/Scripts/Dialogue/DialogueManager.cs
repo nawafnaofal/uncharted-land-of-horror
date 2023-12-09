@@ -375,4 +375,14 @@ public class DialogueManager : MonoBehaviour
         }
     }
 
+    public void ShowChoices()
+    {
+        DisplayChoices();
+    }
+
+    public void DisplayText(string text)
+    {
+    dialogueText.text = text;
+    }
+
 }
