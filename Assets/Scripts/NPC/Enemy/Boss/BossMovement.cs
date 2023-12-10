@@ -20,6 +20,11 @@ public class BossMovement : MonoBehaviour
 
     AudioSource audioSource;
 
+    [Header("Ink Json")]
+    [SerializeField] private TextAsset inkJSON;
+
+    private bool isDialoguePlaying = false;
+
     private Boss thisBoss;
     private float teleportCooldown = 5f; // Waktu pendingin teleportasi (misalnya 5 detik)
     private bool canTeleport = false;
@@ -34,6 +39,9 @@ public class BossMovement : MonoBehaviour
     public int maxTeleportCount = 3; // Jumlah maksimum teleportasi yang diizinkan sebelum kembali ke keadaan normal
     private bool bossIsTeleporting = false; // Menandakan apakah boss sedang dalam proses teleportasi
 
+    private bool isDialogueTriggered = false;
+    private bool isBossMovementEnabled = true;
+
     void Start()
     {
         thisBoss = GetComponent<Boss>();
@@ -45,22 +53,22 @@ public class BossMovement : MonoBehaviour
     {
         if (currentHealth <= 0)
         {
-            // Bos telah mati atau mencapai kesehatan 0
-            thisBoss.OnTakeDamage -= HandleDamageTaken; // Unsubscribe event
+            thisBoss.OnTakeDamage -= HandleDamageTaken;
             canTeleport = false;
-            ResetTeleportCount(); // Reset teleportCount saat boss mati
-            GameManager.instance.PlayerWin(); // Panggil fungsi PlayerWin dari GameManager
+            ResetTeleportCount();
+            GameManager.instance.PlayerWin();
         }
-        else if (currentHealth <= 5 && !canTeleport)
+        else if (currentHealth == 5 && !isDialogueTriggered)
         {
-            // Bos telah mencapai atau kurang dari 5 kesehatan
-            canTeleport = true;
+            isDialogueTriggered = true;
+            isBossMovementEnabled = false;
+            StartCoroutine(RunOpeningDialogue());
         }
     }
 
     void Update()
     {
-        if (canTeleport && Time.time - lastTeleportTime >= teleportCooldown && !bossIsTeleporting)
+        if (canTeleport && Time.time - lastTeleportTime >= teleportCooldown && !bossIsTeleporting && !isDialoguePlaying)
         {
             if (teleportCount < maxTeleportCount)
             {
@@ -130,7 +138,7 @@ public class BossMovement : MonoBehaviour
         bossIsTeleporting = false;
     }
 
-    
+
 
     private Vector2 CalculateTeleportPositionAwayFromPlayer()
     {
@@ -391,5 +399,28 @@ public class BossMovement : MonoBehaviour
     {
         teleportCount = 0;
         canTeleport = false;
+    }
+
+    private IEnumerator RunOpeningDialogue()
+    {
+        // Nonaktifkan pergerakan boss saat dialog berlangsung
+        if (!isBossMovementEnabled)
+        {
+            // Tambahan: nonaktifkan komponen Rigidbody atau skrip pergerakan jika ada
+             rb.velocity = Vector2.zero;
+             rb.constraints = RigidbodyConstraints2D.FreezeAll;
+        }
+        
+
+        DialogueManager.GetInstance()?.EnterDialogueMode(inkJSON);
+
+        yield return new WaitUntil(() => !DialogueManager.GetInstance().dialogueIsPlaying);
+
+        // Setelah dialog selesai, aktifkan kembali pergerakan boss
+        isBossMovementEnabled = true;
+        canTeleport = true;
+
+        // Aktifkan kembali komponen Rigidbody atau skrip pergerakan jika ada
+        rb.constraints = RigidbodyConstraints2D.None;
     }
 }

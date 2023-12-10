@@ -285,18 +285,18 @@ public class Player : MonoBehaviour, IDamageable
             hasSaveData = true;
 
                 Debug.Log("Loaded player data: " +
-        "currHealth=" + data.currHealth +
-        ", maxHealth=" + data.maxHealth +
-        ", strength=" + data.strength +
-        ", speed=" + data.speed +
-        ", money=" + data.money +
-        ", commonKeys=" + data.commonKeys +
-        ", uncommonKeys=" + data.uncommonKeys +
-        ", bossKeys=" + data.bossKeys +
-        ", currentAmmo=" + data.currentAmmo +
-        ", maxAmmo=" + data.maxAmmo +
-        ", position=" + data.position[0] + ", " + data.position[1] + ", " + data.position[2] +
-        ", sceneName=" + data.sceneName);
+                "currHealth=" + data.currHealth +
+                ", maxHealth=" + data.maxHealth +
+                ", strength=" + data.strength +
+                ", speed=" + data.speed +
+                ", money=" + data.money +
+                ", commonKeys=" + data.commonKeys +
+                ", uncommonKeys=" + data.uncommonKeys +
+                ", bossKeys=" + data.bossKeys +
+                ", currentAmmo=" + data.currentAmmo +
+                ", maxAmmo=" + data.maxAmmo +
+                ", position=" + data.position[0] + ", " + data.position[1] + ", " + data.position[2] +
+                ", sceneName=" + data.sceneName);
         }
     }
 

@@ -62,10 +62,7 @@ public class DialogueManager : MonoBehaviour
 
         currentAudioInfo = defaultAudioInfo;
 
-        if (InputManager.GetInstance() == null)
-        {
-            Debug.LogError("InputManager is not initialized!");
-        }
+        
     }
 
     public static DialogueManager GetInstance()

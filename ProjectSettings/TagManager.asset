@@ -49,6 +49,12 @@ TagManager:
   - name: Signs
     uniqueID: 3026211523
     locked: 0
+  - name: Jembatan
+    uniqueID: 1008513655
+    locked: 0
   - name: Player
     uniqueID: 3929757699
+    locked: 0
+  - name: Gate
+    uniqueID: 3710704839
     locked: 0
