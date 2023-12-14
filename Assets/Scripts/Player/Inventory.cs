@@ -55,7 +55,7 @@ public class Inventory : MonoBehaviour
     {
         Item itemToReceive = itemToReceiveGO.GetComponent<Item>(); // Mengambil komponen Item dari item yang akan diterima
 
-        dialogueText.text = "You found a " + itemToReceive.itemName + "\n" + itemToReceive.itemDescription; // Menampilkan pesan dialog
+        dialogueText.text = itemToReceive.itemName + "\n" + itemToReceive.itemDescription; // Menampilkan pesan dialog
 
         itemToShow = itemToReceiveGO; // Menyimpan item yang akan ditampilkan
 

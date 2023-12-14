@@ -1821,6 +1821,32 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1646196875}
+    - target: {fileID: 5673814924787052186, guid: 358e931c75c906d44ac0319e388f7c0c,
+        type: 3}
+      propertyPath: m_fontColor.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5673814924787052186, guid: 358e931c75c906d44ac0319e388f7c0c,
+        type: 3}
+      propertyPath: m_fontColor.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5673814924787052186, guid: 358e931c75c906d44ac0319e388f7c0c,
+        type: 3}
+      propertyPath: m_fontColor.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5673814924787052186, guid: 358e931c75c906d44ac0319e388f7c0c,
+        type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 7424355441092118997, guid: 358e931c75c906d44ac0319e388f7c0c,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 194503772, guid: 10cd90c518789fb40ab0b3cd37e768b2,
+        type: 3}
     - target: {fileID: 7537437107299612638, guid: 358e931c75c906d44ac0319e388f7c0c,
         type: 3}
       propertyPath: m_Pivot.x

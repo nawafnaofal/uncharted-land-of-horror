@@ -48,7 +48,7 @@ public class MainMenu : MonoBehaviour
    
         InfoManager.Instance.NewGameStats();
  
-        SceneManager.LoadScene("Main"); 
+        SceneManager.LoadScene("Prolog"); 
     }
 
 
