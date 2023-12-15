@@ -242,7 +242,7 @@ public class UIManager : MonoBehaviour
         yield return new WaitForSeconds(2f);
 
         // Pindah ke panel credit
-        SceneManager.LoadScene("CreditScene");
+        SceneManager.LoadScene("Epilog");
     }
 
     void FadeOut()

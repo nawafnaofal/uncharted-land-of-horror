@@ -1762,7 +1762,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 3956267947799871601}
         m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
         m_MethodName: Retry
         m_Mode: 1
@@ -1926,7 +1926,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &6068513558000480025
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2941,7 +2941,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 9.822046, y: 56.46341}
+  m_AnchoredPosition: {x: 9.8220215, y: 56.46338}
   m_SizeDelta: {x: 84.878, y: 36.9921}
   m_Pivot: {x: 0, y: 1}
 --- !u!222 &5772906679472206966
@@ -7632,7 +7632,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -20.000061, y: -9.9999695}
+  m_AnchoredPosition: {x: -20.000061, y: -10}
   m_SizeDelta: {x: 256, y: 192}
   m_Pivot: {x: 1, y: 1}
 --- !u!1 &6926160318804032216
@@ -8099,7 +8099,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 20.000002, y: -9.9999695}
+  m_AnchoredPosition: {x: 20, y: -10}
   m_SizeDelta: {x: 256, y: 192}
   m_Pivot: {x: 0, y: 1}
 --- !u!222 &5131984713536913971
@@ -9626,7 +9626,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 3956267947799871601}
         m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
         m_MethodName: Quit
         m_Mode: 1

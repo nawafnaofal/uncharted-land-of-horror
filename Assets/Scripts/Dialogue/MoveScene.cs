@@ -7,6 +7,6 @@ public class MoveScene : MonoBehaviour
 {
     private void OnEnable()
     {
-        SceneManager.LoadScene("Island", LoadSceneMode.Single);
+        SceneManager.LoadScene("CreditScene", LoadSceneMode.Single);
     }
 }
