@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 6a4d32daa5b0c5d48bd82da2ac9e45c3
+guid: a07c9387a5db1d541ba88a290cc9c71b
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -48,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 64
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -110,7 +110,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Character-Sheet Aya 64_0
+      name: Ay_Walk_Down_0
       rect:
         serializedVersion: 2
         x: 0
@@ -124,14 +124,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5f91f7f97503bca40942d35915ba2739
-      internalID: -822267465
+      spriteID: 73ca7cd64e946d740b2f1dd58baaac5e
+      internalID: -72084849
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Character-Sheet Aya 64_1
+      name: Ay_Walk_Down_1
       rect:
         serializedVersion: 2
         x: 64
@@ -145,14 +145,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ee8f945c5b4f8b94e9e7b0cd0d5dc7f4
-      internalID: -576525099
+      spriteID: 7ef3e77e009ccc645be8787a1a637530
+      internalID: -670634781
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Character-Sheet Aya 64_2
+      name: Ay_Walk_Down_2
       rect:
         serializedVersion: 2
         x: 128
@@ -166,14 +166,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 96eb5a46873cc6b46a9a259ce62d8f9a
-      internalID: 118238925
+      spriteID: 9bcb876713ae2724b906f42a22e67368
+      internalID: -171035279
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Character-Sheet Aya 64_3
+      name: Ay_Walk_Down_3
       rect:
         serializedVersion: 2
         x: 192
@@ -187,14 +187,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9695011c1cc850f4a9217bcb38a8e81e
-      internalID: 1537125253
+      spriteID: 02845a5133a34574aa6278c24ee66cc8
+      internalID: 1601536733
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Character-Sheet Aya 64_4
+      name: Ay_Walk_Down_4
       rect:
         serializedVersion: 2
         x: 256
@@ -208,14 +208,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 201b751191268e64b859c81fd8688b05
-      internalID: 1816868273
+      spriteID: 6632dadebfe36de438cc3c990d591ac3
+      internalID: -2038615174
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Character-Sheet Aya 64_5
+      name: Ay_Walk_Up_0
       rect:
         serializedVersion: 2
         x: 320
@@ -229,14 +229,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d87c49012e6963247b45684e14068d2c
-      internalID: 972227545
+      spriteID: 9d31a5272ba4d3541bc3c86e6ff664f6
+      internalID: -298372540
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Character-Sheet Aya 64_6
+      name: Ay_Walk_Up_1
       rect:
         serializedVersion: 2
         x: 384
@@ -250,14 +250,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8f546db3abf84324994c0a6b51d4f359
-      internalID: 484032850
+      spriteID: 279f56bd5a16fff43b85e6dd2d385c8a
+      internalID: 928597122
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Character-Sheet Aya 64_7
+      name: Ay_Walk_Up_2
       rect:
         serializedVersion: 2
         x: 0
@@ -271,14 +271,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4befc802065a5b94c917ff837494322e
-      internalID: 2126773903
+      spriteID: 8c6be8bfa6a37b5409f82f3253b4be58
+      internalID: 91372407
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Character-Sheet Aya 64_8
+      name: Ay_Walk_Up_3
       rect:
         serializedVersion: 2
         x: 64
@@ -292,14 +292,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5c0ad6523ef1d2b4ab7b84804f150c3c
-      internalID: -274856780
+      spriteID: 88f83e759ee138f498a75f07b7b92506
+      internalID: 1556640591
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Character-Sheet Aya 64_9
+      name: Ay_Walk_Up_4
       rect:
         serializedVersion: 2
         x: 128
@@ -313,14 +313,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: aa3f9e0f877ee924dafed35ca2811cfc
-      internalID: 806139929
+      spriteID: 3bb612552a3953b41a2bc35a93ececeb
+      internalID: -797037463
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Character-Sheet Aya 64_10
+      name: Ay_Walk_Right_0
       rect:
         serializedVersion: 2
         x: 192
@@ -334,14 +334,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0c1c6b185f2e2be409b8148553a4b528
-      internalID: -786007912
+      spriteID: b3e8e8f998cef7643aafeef41a93e452
+      internalID: 411577112
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Character-Sheet Aya 64_11
+      name: Ay_Walk_Right_1
       rect:
         serializedVersion: 2
         x: 256
@@ -355,14 +355,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1e99d59777389b14b86968f0d7d7d41f
-      internalID: 422890872
+      spriteID: b32d555f97124ad49af4366760a3883c
+      internalID: 1151658557
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Character-Sheet Aya 64_12
+      name: Ay_Walk_Right_2
       rect:
         serializedVersion: 2
         x: 320
@@ -376,14 +376,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 089e4e234facba642aa0781b927a0f9d
-      internalID: 1481431463
+      spriteID: 82e1bea919981f4488ce637ac0abaafb
+      internalID: 743511525
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Character-Sheet Aya 64_13
+      name: Ay_Walk_Right_3
       rect:
         serializedVersion: 2
         x: 384
@@ -397,14 +397,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a02fa10894f65c040b033d048ad5c104
-      internalID: -228478629
+      spriteID: f207afb406e102e4a8552afe6eb50da1
+      internalID: 153555887
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Character-Sheet Aya 64_14
+      name: Ay_Walk_Right_4
       rect:
         serializedVersion: 2
         x: 0
@@ -418,14 +418,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 88681a3cbc1840b429ed44c8849aab3b
-      internalID: 598264345
+      spriteID: e10c8aa97eeee204cac2b5f0081524fa
+      internalID: 571198669
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Character-Sheet Aya 64_15
+      name: Ay_Walk_Left_0
       rect:
         serializedVersion: 2
         x: 64
@@ -439,14 +439,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b9e93f1e0f8772346bcd8835d53140f1
-      internalID: -1226400756
+      spriteID: a9648eef7a9e3ab438dcef334efdd0a3
+      internalID: 970742190
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Character-Sheet Aya 64_16
+      name: Ay_Walk_Left_1
       rect:
         serializedVersion: 2
         x: 128
@@ -460,14 +460,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5b33ee1e4a178574591e658badf8f460
-      internalID: -742887698
+      spriteID: fc501492e08239f42aec8b78dee7bf1e
+      internalID: 986190178
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Character-Sheet Aya 64_17
+      name: Ay_Walk_Left_2
       rect:
         serializedVersion: 2
         x: 192
@@ -481,14 +481,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5a696e10235432842b827ab59bed52b9
-      internalID: -8476680
+      spriteID: 9fb9d61e36f03e840af76e9aa1fce632
+      internalID: -59347124
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Character-Sheet Aya 64_18
+      name: Ay_Walk_Left_3
       rect:
         serializedVersion: 2
         x: 256
@@ -502,14 +502,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a785d9fa0b74bed44b9bd12541ac77d8
-      internalID: -849894590
+      spriteID: c37d61a0034341e46b1bda6e98f44d25
+      internalID: -679241733
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Character-Sheet Aya 64_19
+      name: Ay_Walk_Left_4
       rect:
         serializedVersion: 2
         x: 320
@@ -523,14 +523,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6a8545c3cb360534d966bd76999fd938
-      internalID: 1065806802
+      spriteID: b9cc634846902c84086d4fe0802f632b
+      internalID: 1688043387
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Character-Sheet Aya 64_20
+      name: Ay_Attack_Down_0
       rect:
         serializedVersion: 2
         x: 384
@@ -544,14 +544,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e22fdde4a125d1a43a0458516415bbe2
-      internalID: -100146763
+      spriteID: f38ad0048d1dba94c9a53fc6bd55332d
+      internalID: -1909950324
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Character-Sheet Aya 64_21
+      name: Ay_Attack_Down_1
       rect:
         serializedVersion: 2
         x: 0
@@ -565,14 +565,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e816b0b96c6822b48955bdb706399c47
-      internalID: -466145816
+      spriteID: b9e8e87deb6b0e84b9a2790f6f977471
+      internalID: -1338508024
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Character-Sheet Aya 64_22
+      name: Ay_Attack_Down_2
       rect:
         serializedVersion: 2
         x: 64
@@ -586,14 +586,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 191d1b9c388117146a6960a8acae617e
-      internalID: 1243578922
+      spriteID: a017e4b7309c81645b30d808242857ab
+      internalID: 298065178
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Character-Sheet Aya 64_23
+      name: Ay_Attack_Down_3
       rect:
         serializedVersion: 2
         x: 128
@@ -607,14 +607,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7ce62d02d47d5f641b31fd9f3774aac9
-      internalID: 1389285456
+      spriteID: dd56f92bf2618ad4bac965e66d293d40
+      internalID: 1737168359
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Character-Sheet Aya 64_24
+      name: Ay_Attack_Up_0
       rect:
         serializedVersion: 2
         x: 192
@@ -628,14 +628,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f8816b0c93b402444912f0fc5832a55c
-      internalID: -2058116757
+      spriteID: 2a6878bcfc9d2b246b38e82e12230296
+      internalID: 175350842
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Character-Sheet Aya 64_25
+      name: Ay_Attack_Up_1
       rect:
         serializedVersion: 2
         x: 256
@@ -649,14 +649,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: db27000bca835c54894367ccbec332bd
-      internalID: -676120962
+      spriteID: 0228e909dc53a6047b46d309e3a319d9
+      internalID: 760917912
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Character-Sheet Aya 64_26
+      name: Ay_Attack_Up_2
       rect:
         serializedVersion: 2
         x: 320
@@ -670,14 +670,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1424575fae426044f973dcfbc4f04462
-      internalID: 232966616
+      spriteID: b4236f1a3fa0ea547a724cee68f1db76
+      internalID: 1431141673
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Character-Sheet Aya 64_27
+      name: Ay_Attack_Up_3
       rect:
         serializedVersion: 2
         x: 384
@@ -691,14 +691,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7619551423b287c448e8674dbcd9c144
-      internalID: -1835208842
+      spriteID: 9889a3edc64118a49a87f134293a78a8
+      internalID: -274155794
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Character-Sheet Aya 64_28
+      name: Ay_Attack_Right_0
       rect:
         serializedVersion: 2
         x: 0
@@ -712,14 +712,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 726f139c95259f74eb9b1c22ba25fb58
-      internalID: -1739500129
+      spriteID: 0e0e8eb52b8e49f4689d5e783c13f094
+      internalID: -575499009
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Character-Sheet Aya 64_29
+      name: Ay_Attack_Right_1
       rect:
         serializedVersion: 2
         x: 64
@@ -733,14 +733,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5f3eb99e0e5e58e4dac0143f49301892
-      internalID: -675284316
+      spriteID: cba2d674fc70e474289484c2a20696cc
+      internalID: -1616911221
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Character-Sheet Aya 64_30
+      name: Ay_Attack_Right_2
       rect:
         serializedVersion: 2
         x: 128
@@ -754,14 +754,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0a2a9331f7ff00841904d3342049e006
-      internalID: -453858088
+      spriteID: 70bb502b2e433ef46ac133fc23ea0600
+      internalID: 672733525
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Character-Sheet Aya 64_31
+      name: Ay_Attack_Right_3
       rect:
         serializedVersion: 2
         x: 192
@@ -775,14 +775,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ca62bd14017d95a4e94c8cb8eb943a18
-      internalID: 171212804
+      spriteID: 370cf24fde08dc34b9606e7613eddac4
+      internalID: -1019004060
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Character-Sheet Aya 64_32
+      name: Ay_Attack_Left_0
       rect:
         serializedVersion: 2
         x: 256
@@ -796,14 +796,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 58852184cdcb1604eb3ad559826352e8
-      internalID: 1292154035
+      spriteID: b069985ec43aaa84688ea136bf45e4af
+      internalID: 1877954966
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Character-Sheet Aya 64_33
+      name: Ay_Attack_Left_1
       rect:
         serializedVersion: 2
         x: 320
@@ -817,14 +817,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9c5352ff1bfee084497a2b296fea4672
-      internalID: -694834986
+      spriteID: 73dab4c0c270040499884dfd6bd818df
+      internalID: -1604436724
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Character-Sheet Aya 64_34
+      name: Ay_Attack_Left_2
       rect:
         serializedVersion: 2
         x: 384
@@ -838,14 +838,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 29b579375f70f114fa8ea6fbc94d4dad
-      internalID: 404868496
+      spriteID: 4b2458bf46eda964a9f02372619c2204
+      internalID: 1011535364
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Character-Sheet Aya 64_35
+      name: Ay_Attack_Left_4
       rect:
         serializedVersion: 2
         x: 0
@@ -859,14 +859,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 097787b5607ef6e419046e8ea2347249
-      internalID: -2042522583
+      spriteID: 216e236e6795e094d97db11dfd42a900
+      internalID: -1164809758
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Character-Sheet Aya 64_36
+      name: Ay_Receive_0
       rect:
         serializedVersion: 2
         x: 64
@@ -880,14 +880,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5b86eed7371fe3047aec17cc41de1449
-      internalID: -1497124403
+      spriteID: 95efb88b3c2de324a829cbf6743c8858
+      internalID: -19661581
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Character-Sheet Aya 64_37
+      name: Ay_Receive_1
       rect:
         serializedVersion: 2
         x: 128
@@ -901,14 +901,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2d2c6da09145da943a1bccf2fe89cc89
-      internalID: 900479307
+      spriteID: 4a666fb6c01f0bd42b1691f7fe356020
+      internalID: -888042835
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Character-Sheet Aya 64_38
+      name: Ay_Receive_2
       rect:
         serializedVersion: 2
         x: 192
@@ -922,14 +922,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e5262a5d43dc0864395f46aeeee9601b
-      internalID: 1179065963
+      spriteID: f036acacd368cee48b90f0f86b2dec91
+      internalID: -1566215952
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Character-Sheet Aya 64_39
+      name: Ay_Receive_3
       rect:
         serializedVersion: 2
         x: 256
@@ -943,8 +943,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cce6f9f95b6013f489bac5a4303061b7
-      internalID: 16255210
+      spriteID: 4724ce361e73c8e42b67f32b5c655e53
+      internalID: -1549786222
       vertices: []
       indices: 
       edges: []
@@ -960,46 +960,46 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Character-Sheet Aya 64_0: -822267465
-      Character-Sheet Aya 64_1: -576525099
-      Character-Sheet Aya 64_10: -786007912
-      Character-Sheet Aya 64_11: 422890872
-      Character-Sheet Aya 64_12: 1481431463
-      Character-Sheet Aya 64_13: -228478629
-      Character-Sheet Aya 64_14: 598264345
-      Character-Sheet Aya 64_15: -1226400756
-      Character-Sheet Aya 64_16: -742887698
-      Character-Sheet Aya 64_17: -8476680
-      Character-Sheet Aya 64_18: -849894590
-      Character-Sheet Aya 64_19: 1065806802
-      Character-Sheet Aya 64_2: 118238925
-      Character-Sheet Aya 64_20: -100146763
-      Character-Sheet Aya 64_21: -466145816
-      Character-Sheet Aya 64_22: 1243578922
-      Character-Sheet Aya 64_23: 1389285456
-      Character-Sheet Aya 64_24: -2058116757
-      Character-Sheet Aya 64_25: -676120962
-      Character-Sheet Aya 64_26: 232966616
-      Character-Sheet Aya 64_27: -1835208842
-      Character-Sheet Aya 64_28: -1739500129
-      Character-Sheet Aya 64_29: -675284316
-      Character-Sheet Aya 64_3: 1537125253
-      Character-Sheet Aya 64_30: -453858088
-      Character-Sheet Aya 64_31: 171212804
-      Character-Sheet Aya 64_32: 1292154035
-      Character-Sheet Aya 64_33: -694834986
-      Character-Sheet Aya 64_34: 404868496
-      Character-Sheet Aya 64_35: -2042522583
-      Character-Sheet Aya 64_36: -1497124403
-      Character-Sheet Aya 64_37: 900479307
-      Character-Sheet Aya 64_38: 1179065963
-      Character-Sheet Aya 64_39: 16255210
-      Character-Sheet Aya 64_4: 1816868273
-      Character-Sheet Aya 64_5: 972227545
-      Character-Sheet Aya 64_6: 484032850
-      Character-Sheet Aya 64_7: 2126773903
-      Character-Sheet Aya 64_8: -274856780
-      Character-Sheet Aya 64_9: 806139929
+      Ay_Attack_Down_0: -1909950324
+      Ay_Attack_Down_1: -1338508024
+      Ay_Attack_Down_2: 298065178
+      Ay_Attack_Down_3: 1737168359
+      Ay_Attack_Left_0: 1877954966
+      Ay_Attack_Left_1: -1604436724
+      Ay_Attack_Left_2: 1011535364
+      Ay_Attack_Left_4: -1164809758
+      Ay_Attack_Right_0: -575499009
+      Ay_Attack_Right_1: -1616911221
+      Ay_Attack_Right_2: 672733525
+      Ay_Attack_Right_3: -1019004060
+      Ay_Attack_Up_0: 175350842
+      Ay_Attack_Up_1: 760917912
+      Ay_Attack_Up_2: 1431141673
+      Ay_Attack_Up_3: -274155794
+      Ay_Receive_0: -19661581
+      Ay_Receive_1: -888042835
+      Ay_Receive_2: -1566215952
+      Ay_Receive_3: -1549786222
+      Ay_Walk_Down_0: -72084849
+      Ay_Walk_Down_1: -670634781
+      Ay_Walk_Down_2: -171035279
+      Ay_Walk_Down_3: 1601536733
+      Ay_Walk_Down_4: -2038615174
+      Ay_Walk_Left_0: 970742190
+      Ay_Walk_Left_1: 986190178
+      Ay_Walk_Left_2: -59347124
+      Ay_Walk_Left_3: -679241733
+      Ay_Walk_Left_4: 1688043387
+      Ay_Walk_Right_0: 411577112
+      Ay_Walk_Right_1: 1151658557
+      Ay_Walk_Right_2: 743511525
+      Ay_Walk_Right_3: 153555887
+      Ay_Walk_Right_4: 571198669
+      Ay_Walk_Up_0: -298372540
+      Ay_Walk_Up_1: 928597122
+      Ay_Walk_Up_2: 91372407
+      Ay_Walk_Up_3: 1556640591
+      Ay_Walk_Up_4: -797037463
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
