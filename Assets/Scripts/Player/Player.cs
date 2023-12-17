@@ -231,8 +231,7 @@ public class Player : MonoBehaviour, IDamageable
         SaveSystem.SavePlayer(this);
         hasSaveData = true;
         Debug.Log("Player data saved successfully!");
-    
-}
+    }
 
     public void LoadPlayer()
     {
