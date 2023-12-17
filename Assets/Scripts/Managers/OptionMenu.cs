@@ -17,17 +17,23 @@ public class OptionMenu : MonoBehaviour
         resolutionDropdown.ClearOptions();
         List<string> options = new List<string>();
         int currentResolutionIndex = 0;
+
+        // Mendapatkan resolusi layar saat ini
+        Resolution currentScreenResolution = Screen.currentResolution;
+
         for (int i = 0; i < resolutions.Length; i++)
         {
             string option = resolutions[i].width + "x" + resolutions[i].height;
             options.Add(option);
 
-            if (resolutions[i].width == Screen.currentResolution.width &&
-                resolutions[i].height == Screen.currentResolution.height)
+            // Memeriksa apakah resolusi saat ini sesuai dengan resolusi loop
+            if (resolutions[i].width == currentScreenResolution.width &&
+                resolutions[i].height == currentScreenResolution.height)
             {
                 currentResolutionIndex = i;
             }
         }
+
         resolutionDropdown.AddOptions(options);
         resolutionDropdown.value = currentResolutionIndex;
         resolutionDropdown.RefreshShownValue();
@@ -49,8 +55,8 @@ public class OptionMenu : MonoBehaviour
         QualitySettings.SetQualityLevel(qualityIndex);
     }
 
-    public void SetFullscreen(bool isFulscreen)
+    public void SetFullscreen(bool isFullscreen)
     {
-        Screen.fullScreen = isFulscreen;
+        Screen.fullScreen = isFullscreen;
     }
 }

@@ -1729,7 +1729,7 @@ PlayableDirector:
   m_GameObject: {fileID: 1801357620}
   m_Enabled: 1
   serializedVersion: 3
-  m_PlayableAsset: {fileID: 11400000, guid: 9ef7be8704f7ac84398e34dd8bfdae5c, type: 2}
+  m_PlayableAsset: {fileID: 11400000, guid: 0b9a3a906b00d9b47832d5b2cd0086d8, type: 2}
   m_InitialState: 1
   m_WrapMode: 2
   m_DirectorUpdateMode: 1
@@ -1773,6 +1773,34 @@ PlayableDirector:
     value: {fileID: 808887056}
   - key: {fileID: -6865419224782847288, guid: 9ef7be8704f7ac84398e34dd8bfdae5c, type: 2}
     value: {fileID: 1162357077}
+  - key: {fileID: -6865419224782847288, guid: 0b9a3a906b00d9b47832d5b2cd0086d8, type: 2}
+    value: {fileID: 1162357077}
+  - key: {fileID: -5043799109849238500, guid: 0b9a3a906b00d9b47832d5b2cd0086d8, type: 2}
+    value: {fileID: 1641887414}
+  - key: {fileID: 6876575832699181529, guid: 0b9a3a906b00d9b47832d5b2cd0086d8, type: 2}
+    value: {fileID: 1641887418}
+  - key: {fileID: 3111677733992516374, guid: 0b9a3a906b00d9b47832d5b2cd0086d8, type: 2}
+    value: {fileID: 888616135}
+  - key: {fileID: -4562132823445227519, guid: 0b9a3a906b00d9b47832d5b2cd0086d8, type: 2}
+    value: {fileID: 888616137}
+  - key: {fileID: -8704034639274024705, guid: 0b9a3a906b00d9b47832d5b2cd0086d8, type: 2}
+    value: {fileID: 1084427731}
+  - key: {fileID: -1866347236100616210, guid: 0b9a3a906b00d9b47832d5b2cd0086d8, type: 2}
+    value: {fileID: 1084427733}
+  - key: {fileID: 132947648758675676, guid: 0b9a3a906b00d9b47832d5b2cd0086d8, type: 2}
+    value: {fileID: 59377940}
+  - key: {fileID: 3372244708950661863, guid: 0b9a3a906b00d9b47832d5b2cd0086d8, type: 2}
+    value: {fileID: 59377942}
+  - key: {fileID: -1996763424332105062, guid: 0b9a3a906b00d9b47832d5b2cd0086d8, type: 2}
+    value: {fileID: 1164391275}
+  - key: {fileID: 498831114822884506, guid: 0b9a3a906b00d9b47832d5b2cd0086d8, type: 2}
+    value: {fileID: 1164391277}
+  - key: {fileID: 7186189338011869829, guid: 0b9a3a906b00d9b47832d5b2cd0086d8, type: 2}
+    value: {fileID: 1421060216}
+  - key: {fileID: -4353872838298726205, guid: 0b9a3a906b00d9b47832d5b2cd0086d8, type: 2}
+    value: {fileID: 1421060218}
+  - key: {fileID: -7250686737464420066, guid: 0b9a3a906b00d9b47832d5b2cd0086d8, type: 2}
+    value: {fileID: 808887056}
   m_ExposedReferences:
     m_References: []
 --- !u!1 &1814982834

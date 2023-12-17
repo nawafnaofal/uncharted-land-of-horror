@@ -124,6 +124,7 @@ SpriteAtlas:
     - df1569b0712d66b4384349d1fc7dadfe: -616032484
     - 09effed098368b545974191d08f46d59: 21300000
     - c04400f03308d774db16aac76245b81b: 21300000
+    - 72444bf0756e74249b8a4c91b5b7755a: 21300000
     - f8043e21f451efd4d8c37f6093e863ce: 5580808760293252755
     - f8043e21f451efd4d8c37f6093e863ce: 275180924923007561
     - f8043e21f451efd4d8c37f6093e863ce: -3498927866589285748
@@ -2915,6 +2916,7 @@ SpriteAtlas:
   - {fileID: -616032484, guid: df1569b0712d66b4384349d1fc7dadfe, type: 3}
   - {fileID: 21300000, guid: 09effed098368b545974191d08f46d59, type: 3}
   - {fileID: 21300000, guid: c04400f03308d774db16aac76245b81b, type: 3}
+  - {fileID: 21300000, guid: 72444bf0756e74249b8a4c91b5b7755a, type: 3}
   - {fileID: 5580808760293252755, guid: f8043e21f451efd4d8c37f6093e863ce, type: 3}
   - {fileID: 275180924923007561, guid: f8043e21f451efd4d8c37f6093e863ce, type: 3}
   - {fileID: -3498927866589285748, guid: f8043e21f451efd4d8c37f6093e863ce, type: 3}
@@ -5705,6 +5707,7 @@ SpriteAtlas:
   - Key Boss
   - bow
   - Aya sprite 6
+  - Art Background Main Menu
   - Keys_2
   - Common Key
   - Uncommon Key
