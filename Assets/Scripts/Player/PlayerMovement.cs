@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.VFX;
 
 public class PlayerMovement : Player
 {
@@ -9,6 +10,8 @@ public class PlayerMovement : Player
     Animator anim; // Komponen animator
 
     public bool isInteracting = false;
+
+    public VisualEffect vfxRenderer;
 
     public float Speed
     {
@@ -29,20 +32,26 @@ public class PlayerMovement : Player
     {
         if (!DialogueManager.GetInstance().dialogueIsPlaying)
         {
-            moveDir = Vector2.zero; // Menginisialisasi vektor arah pergerakan menjadi nol
-            moveDir.x = Input.GetAxisRaw("Horizontal"); // Mendapatkan input sumbu horizontal (A/D atau panah kiri/kanan)
-            moveDir.y = Input.GetAxisRaw("Vertical"); // Mendapatkan input sumbu vertikal (W/S atau panah atas/bawah)
+            moveDir = Vector2.zero;
+
+            if (!isInteracting)
+            {
+                moveDir.x = Input.GetAxisRaw("Horizontal");
+                moveDir.y = Input.GetAxisRaw("Vertical");
+            }
 
             if (Input.GetButtonDown("Attack") && currentState != PlayerState.Stagger)
             {
                 if (currentState != PlayerState.Attack && currentState != PlayerState.Interact)
-                    StartCoroutine(AttackCo()); // Memulai serangan jika tombol serangan ditekan
+                    StartCoroutine(AttackCo());
             }
             else if (currentState == PlayerState.Walk || currentState == PlayerState.Interact)
             {
-                UpdateAnimation(); // Memperbarui animasi pergerakan jika pemain berada dalam keadaan berjalan atau berinteraksi
+                UpdateAnimation();
             }
         }
+
+        vfxRenderer.SetVector2("PosCollider", new Vector2(transform.position.x, transform.position.y));
     }
 
     public void SetInteracting(bool value)
@@ -93,8 +102,14 @@ public class PlayerMovement : Player
 
     void MoveCharacter()
     {
-        rb.MovePosition((Vector2)transform.position + moveDir.normalized * speed * Time.deltaTime);
-        // Memindahkan karakter berdasarkan arah pergerakan dan kecepatan
+        // Calculate the new position based on the movement direction and speed
+        Vector2 newPosition = (Vector2)transform.position + moveDir.normalized * speed * Time.deltaTime;
+
+        // Move the player
+        rb.MovePosition(newPosition);
+
+        // Set the vfxRenderer position to match the player's position
+        vfxRenderer.SetVector2("PosCollider", new Vector2(newPosition.x, newPosition.y));
     }
 
     // Ketika pemain sedang menyerang dan bersentuhan dengan collider lain
