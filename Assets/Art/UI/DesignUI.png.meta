@@ -194,7 +194,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DesignUI_4
+      name: GuideButton
       rect:
         serializedVersion: 2
         x: 134
@@ -446,7 +446,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DesignUI_16
+      name: Close
       rect:
         serializedVersion: 2
         x: 102
@@ -551,7 +551,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DesignUI_21
+      name: CreditButton
       rect:
         serializedVersion: 2
         x: 38
@@ -729,6 +729,8 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
+      Close: 1795817203
+      CreditButton: 312767442
       DesignUI_0: 2044463802
       DesignUI_1: 1888962872
       DesignUI_10: -1456205394
@@ -737,13 +739,11 @@ TextureImporter:
       DesignUI_13: 679777774
       DesignUI_14: -1207869752
       DesignUI_15: -605887939
-      DesignUI_16: 1795817203
       DesignUI_17: -392483263
       DesignUI_18: -1678250471
       DesignUI_19: -1133457819
       DesignUI_2: -1217038502
       DesignUI_20: -2073501712
-      DesignUI_21: 312767442
       DesignUI_22: -2043339044
       DesignUI_23: 250810774
       DesignUI_24: -305175243
@@ -752,12 +752,12 @@ TextureImporter:
       DesignUI_27: 869063764
       DesignUI_28: 194503772
       DesignUI_3: 146303986
-      DesignUI_4: -1724489457
       DesignUI_5: 214938299
       DesignUI_6: 1759201447
       DesignUI_7: -916937486
       DesignUI_8: -1647083166
       DesignUI_9: 1973623694
+      GuideButton: -1724489457
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

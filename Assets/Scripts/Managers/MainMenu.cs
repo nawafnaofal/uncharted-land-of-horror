@@ -8,7 +8,11 @@ public class MainMenu : MonoBehaviour
 
     public Button loadButton;
     public GameObject optionPanel;
+    public GameObject guidePanel;
     private InfoManager infoManager;
+
+    public AudioSource backgroundMusic; // Tambahkan ini
+    public AudioClip backgroundMusicClip; // Tambahkan ini
 
     void Start()
     {
@@ -34,6 +38,13 @@ public class MainMenu : MonoBehaviour
         {
   
             loadButton.interactable = false;
+        }
+
+        // Mainkan background music jika tidak sedang bermain
+        if (!backgroundMusic.isPlaying)
+        {
+            backgroundMusic.clip = backgroundMusicClip;
+            backgroundMusic.Play();
         }
     }
 
@@ -80,5 +91,26 @@ public class MainMenu : MonoBehaviour
         {
             optionPanel.SetActive(false);
         }
+    }
+
+    public void GuideOpen()
+    {
+        if (guidePanel != null)
+        {
+            guidePanel.SetActive(true);
+        }
+    }
+
+    public void HideGuide()
+    {
+        if (guidePanel != null)
+        {
+            guidePanel.SetActive(false);
+        }
+    }
+
+    public void OpenCredit()
+    {
+        UnityEngine.SceneManagement.SceneManager.LoadScene("CreditScene");
     }
 }

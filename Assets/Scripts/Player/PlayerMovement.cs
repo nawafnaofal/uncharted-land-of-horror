@@ -13,6 +13,7 @@ public class PlayerMovement : Player
 
     public VisualEffect vfxRenderer;
 
+
     public float Speed
     {
         get { return speed; }
@@ -110,6 +111,8 @@ public class PlayerMovement : Player
 
         // Set the vfxRenderer position to match the player's position
         vfxRenderer.SetVector2("PosCollider", new Vector2(newPosition.x, newPosition.y));
+
+
     }
 
     // Ketika pemain sedang menyerang dan bersentuhan dengan collider lain
